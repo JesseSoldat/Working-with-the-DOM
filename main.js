@@ -1,0 +1,36 @@
+// grab on to the elements in the page
+var box1 = document.querySelector('#num_one');
+var box2 = document.querySelector('#num_two');
+var box3 = document.querySelector('#operator')
+var calcBtn = document.querySelector('#calculateBtn');
+var answ = document.querySelector('#answer')
+
+// add an eventListener for when the user clicks the button
+calcBtn.addEventListener('click', function(firstNum, secondNum, operator) {
+   var firstNum = box1.value;
+   var secondNum = box2.value;
+   var firstNum1 = parseInt(firstNum);
+   var secondNum2 = parseInt(secondNum);
+   var operator = box3.value;
+   // console.log(firstNum);
+   // console.log(secondNum);
+   // console.log(operator);
+       
+        if(operator == '+') {
+          console.log(firstNum1 + secondNum2);
+            // var calc = firstNum1 + secondNum2;
+            
+        }
+        else if(operator == '-') {
+          console.log(firstNum1 - secondNum2);
+        }
+        else if(operator == '*') {
+          console.log(firstNum1 * secondNum2);
+        }
+        else if(operator == '/') {
+          console.log(firstNum1 / secondNum2);
+        }
+        else 
+          console.log('check what you entered');
+        
+}); //addEventListener
