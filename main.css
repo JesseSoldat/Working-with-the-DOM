@@ -1,0 +1,58 @@
+body {
+  background-color: black;
+}
+.wrapper {
+  background-color: yellow;
+  background-image: url(bee.png);
+  z-index: 1;
+  margin: 0 auto;
+  width: 90%;
+  height: 600px;
+}
+.title {
+  font-size: 2em;
+  z-index: 2;
+}
+
+#num_one {
+  padding: 8px;
+  width: 30%;
+  background-color: yellow;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: black
+  font-size: 3em;
+  margin: 0 0 0 2%;
+
+}
+
+#num_two {
+  padding: 8px;
+  width: 30%;
+  background-color: yellow;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: black
+  font-size: 3em;
+}
+#operator {
+  padding: 8px;
+  width: 30%;
+  background-color: yellow;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: black
+  font-size: 9em;
+}
+
+#calculateBtn {
+  padding: 8px;
+  width: 30%;
+  background-color: black;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: yellow;
+  font-size: 1em;
+  margin: 0 0 0 9%;
+
+}

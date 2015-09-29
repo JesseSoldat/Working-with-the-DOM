@@ -6,8 +6,8 @@ var calcBtn = document.querySelector('#calculateBtn');
 var answ = document.querySelector('#answer')
 
 // calculate function
-var calculate = function() {
-
+var calculate = function(e) {
+  e.preventDefault();
   var firstNum = box1.value;
   var secondNum = box2.value;
   var firstNum1 = parseInt(firstNum);
@@ -17,34 +17,38 @@ var calculate = function() {
    // console.log(secondNum);
    // console.log(operator);
 
-   
         if(operator == '+') {
           console.log(firstNum1 + secondNum2);
             var calc = firstNum1 + secondNum2;
-            return calc;  
+            answ.textContent = calc;
+            // return
         }
         else if(operator == '-') {
-          console.log(firstNum1 - secondNum2);
+          // console.log(firstNum1 - secondNum2);
           var calc = firstNum1 - secondNum2;
-            return calc;  
+            answ.textContent = calc;
+             // return
         }
         else if(operator == '*') {
-          console.log(firstNum1 * secondNum2);
+          // console.log(firstNum1 * secondNum2);
           var calc = firstNum1 * secondNum2;
-            return calc;  
+            answ.textContent = calc;
+              // return
         }
         else if(operator == '/') {
-          console.log(firstNum1 / secondNum2);
+          // console.log(firstNum1 / secondNum2);
           var calc = firstNum1 / secondNum2;
-            return calc;  
+            answ.textContent = calc;
+              // return
         }
-        else 
-          console.log('check what you entered');    
+         else 
+         console.log('check what you entered');
+          // answ.textContent = 'Please enter an operator!';   
 }; 
 // add an eventListener for when the user clicks the button
  calcBtn.addEventListener('click', calculate);
 
- 
+
 
   
 
