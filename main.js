@@ -21,29 +21,29 @@ var calculate = function(e) {
           console.log(firstNum1 + secondNum2);
             var calc = firstNum1 + secondNum2;
             answ.textContent = calc;
-            // return
+            return
         }
         else if(operator == '-') {
           // console.log(firstNum1 - secondNum2);
           var calc = firstNum1 - secondNum2;
             answ.textContent = calc;
-             // return
+             return
         }
         else if(operator == '*') {
           // console.log(firstNum1 * secondNum2);
           var calc = firstNum1 * secondNum2;
             answ.textContent = calc;
-              // return
+              return
         }
         else if(operator == '/') {
           // console.log(firstNum1 / secondNum2);
           var calc = firstNum1 / secondNum2;
             answ.textContent = calc;
-              // return
+              return
         }
          else 
          console.log('check what you entered');
-          // answ.textContent = 'Please enter an operator!';   
+          answ.textContent = 'Please enter an operator!';   
 }; 
 // add an eventListener for when the user clicks the button
  calcBtn.addEventListener('click', calculate);

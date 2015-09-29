@@ -1,6 +1,15 @@
 body {
   background-color: black;
 }
+label {
+  font-size: 1em;
+  font-weight: bold;
+  vertical-align: middle;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
 .wrapper {
   background-color: yellow;
   background-image: url(bee.png);
@@ -8,6 +17,12 @@ body {
   margin: 0 auto;
   width: 90%;
   height: 600px;
+}
+.container {
+  
+  margin: 7% 0 0 55%;
+  width: 50%;
+  padding: 5%;
 }
 .title {
   font-size: 2em;
@@ -17,34 +32,33 @@ body {
 #num_one {
   padding: 8px;
   width: 30%;
-  background-color: yellow;
+  font-size: 20px;
   border-radius: 3px;
   border: 1px solid black;
-  color: black
-  font-size: 3em;
-  margin: 0 0 0 2%;
-
+  color: black;
+  margin: 0 0 0 4%;
 }
 
 #num_two {
   padding: 8px;
   width: 30%;
-  background-color: yellow;
+  font-size: 20px;
   border-radius: 3px;
   border: 1px solid black;
-  color: black
-  font-size: 3em;
+  color: black;
+  margin: 0 0 0 4%;
+
 }
 #operator {
   padding: 8px;
   width: 30%;
-  background-color: yellow;
+  font-size: 20px;
   border-radius: 3px;
   border: 1px solid black;
-  color: black
-  font-size: 9em;
-}
+  color: black;
+  margin: 0 0 0 5%;
 
+}
 #calculateBtn {
   padding: 8px;
   width: 30%;
@@ -53,6 +67,23 @@ body {
   border: 1px solid black;
   color: yellow;
   font-size: 1em;
-  margin: 0 0 0 9%;
+  margin: 0 0 0 13%;
+}
+.answerLable {
+  display: inline-block;
+}
+.answer {
+  padding: 15px;
+  width: 40%;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: black
+  margin: 0 0 0 4%;
+  background-color: white;
+  
+}
+.answer h2 {
+  vertical-align: middle;
 
 }
